@@ -1,11 +1,11 @@
 
 import './App.css';
-import Navbar from './components/Navbar';
+import Allcomponents from './components/Allcomponents';
 
 function App() {
   return (
     <div >
-      <Navbar/>
+      <Allcomponents/>
       
       
     </div>
