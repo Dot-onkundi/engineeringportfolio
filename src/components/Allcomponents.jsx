@@ -5,6 +5,9 @@ import ProfilePic from './images/profilepic.jpg'
 import ImageOne from './images/design.svg'
 import ImageTwo from './images/power.png'
 import ImageThree from './images/robin.png'
+import {Link} from 'react-router-dom'
+
+
 
 import {TiTick} from 'react-icons/ti'
 
@@ -13,7 +16,7 @@ import {TiTick} from 'react-icons/ti'
 
 
 
-const Navbar = () => {
+const Allcomponents = () => {
 
   return (
     <div>
@@ -26,7 +29,7 @@ const Navbar = () => {
               <BsFillMoonStarsFill  className='cursor-pointer text-2xl'/>
             </li>
             <li> 
-              <button className='bg-gradient-to-r from-cyan-500 to-teal-600 text-white px-4 py-2 rounded-md ml-8 '> Resume </button> 
+              <Link target='_blank' to='https://drive.google.com/file/d/1lSlpEhNYkSLMlSZJfTah1VnAvab1Kci_/view?usp=sharing'>              <button className='bg-gradient-to-r from-cyan-500 to-teal-600 text-white px-4 py-2 rounded-md ml-8 '> Resume </button>  </Link>
             </li>            
            </ul>
         </nav>
@@ -39,10 +42,11 @@ const Navbar = () => {
         <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 ">
         
         
-        <FaLinkedin className=''/>
-        <FaGithubSquare className=''/>
-        <FaInstagramSquare  className=''/>
-        <FaTwitterSquare className=''/>
+        <Link target='_blank' to='//www.linkedin.com/in/onkundifelix'>    <FaLinkedin   className=''/>   </Link>
+        <Link target='_blank' to='//github.com/Dot-onkundi'>        <FaGithubSquare  className=''/> </Link>
+        <Link  target='_blank' to='//www.linkedin.com/in/onkundifelix'>        < FaInstagramSquare className=''/> </Link>
+        <Link target='_blank' to='//twitter.com/Onkundi_Felix'>        <FaTwitterSquare  className=''/> </Link>
+        
 
 
         </div>
@@ -132,7 +136,8 @@ const Navbar = () => {
           <h3 className="text-3xl ">Contact me </h3>
           <p className='text-md py-2 leading-8 text-gray-600'> Hi there? My inbox is open to all. Request for a free open source collaboration and let us discuss a project. </p>
           <p className='text-md py-2 leading-8 text-gray-600'> My services range from engineering and programming to leadership for teams. Let us connect! </p>
-          <p className='text-md py-2 leading-8 text-gray-600'> onkundifelix@outlook.com</p>
+          <p className='text-md pt-2 leading-8 text-gray-600'> onkundifelix@outlook.com</p>
+          <p className='text-md leading-8 text-teal-700'> +254710834128</p>
         </div>
  
 
@@ -151,4 +156,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Allcomponents
