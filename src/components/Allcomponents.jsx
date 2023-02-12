@@ -34,7 +34,7 @@ const Allcomponents = () => {
   return (
     <div>
       <div className='text-[#000] bg-white px-10 '>
-      <section className=' h-screen max-w-[1240px] mx-auto '>
+      <section className=' h-screen '>
         <nav className='py-10 mb-12 flex justify-between'>
           <h1 className='text-lg'> Developed by Felix</h1>
           <ul className='flex items-center justify-between'>
@@ -68,7 +68,7 @@ const Allcomponents = () => {
         </div>
         <section>
 
-        <div >
+        <div className='max-w-[1240px] mx-auto' >
           <h3 className="text-3xl ">Experience </h3>
           <p className='text-md py-2 leading-8 text-gray-600'> In my journey as an engineer, I have worked both remotely and onsite for <span className='text-teal-500'> Companies </span> and <span className='text-teal-500'> Startups </span>  and colloborated with teams to deliver products and solutions for both business and consumers.</p>
           <p className='text-md py-2 leading-8 text-gray-600'> I have the following eperience </p>
