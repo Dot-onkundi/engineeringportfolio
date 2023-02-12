@@ -14,8 +14,6 @@ import {TiTick} from 'react-icons/ti'
 
 
 
-
-
 const Allcomponents = () => {
 
   return (
@@ -29,7 +27,7 @@ const Allcomponents = () => {
               <BsFillMoonStarsFill  className='cursor-pointer text-2xl'/>
             </li>
             <li> 
-              <Link target='_blank' to='https://drive.google.com/file/d/1lSlpEhNYkSLMlSZJfTah1VnAvab1Kci_/view?usp=sharing'>              <button className='bg-gradient-to-r from-cyan-500 to-teal-600 text-white px-4 py-2 rounded-md ml-8 '> Resume </button>  </Link>
+              <Link target='_blank' to='https://drive.google.com/file/d/1lSlpEhNYkSLMlSZJfTah1VnAvab1Kci_/view?usp=sharing'><button className='bg-gradient-to-r from-cyan-500 to-teal-600 text-white px-4 py-2 rounded-md ml-8 '> Resume </button>  </Link>
             </li>            
            </ul>
         </nav>
@@ -60,6 +58,8 @@ const Allcomponents = () => {
           <p className='text-md py-2 leading-8 text-gray-600'> In my journey as an engineer, I have worked both remotely and onsite for <span className='text-teal-500'> Companies </span> and <span className='text-teal-500'> Startups </span>  and colloborated with teams to deliver products and solutions for both business and consumers.</p>
           <p className='text-md py-2 leading-8 text-gray-600'> I have the following eperience </p>
         </div>
+
+        {/*Experience Cards */}
 
         <div className='w-full py-[4rem] px-4 bg-white'>
         <div className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-10 ">
@@ -114,7 +114,7 @@ const Allcomponents = () => {
     <div className='w-full py-8 px-4 text-white rounded-lg bg-gradient-to-r from-cyan-500 to-teal-600'>
         <div className="max-w-[1240px] mx-auto grid lg:grid-cols-3  ">
             <div className="lg:col-span-2">
-                <h1 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2'> Do you wish make an inquiry? </h1>
+                <h1 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2'> Do you wish to make an inquiry? </h1>
                 <p> Let me get in touch </p>
             </div>
             <div className="my-4">
@@ -135,20 +135,11 @@ const Allcomponents = () => {
       <div className='mx-auto text-md py-5 text-center ' >
           <h3 className="text-3xl ">Contact me </h3>
           <p className='text-md py-2 leading-8 text-gray-600'> Hi there? My inbox is open to all. Request for a free open source collaboration and let us discuss a project. </p>
-          <p className='text-md py-2 leading-8 text-gray-600'> My services range from engineering and programming to leadership for teams. Let us connect! </p>
+          <p className='text-md py-2 leading-8 text-gray-600'> My services range from electrical and software engineering to leadership for teams. Let us connect! </p>
           <p className='text-md pt-2 leading-8 text-gray-600'> onkundifelix@outlook.com</p>
           <p className='text-md leading-8 text-teal-700'> +254710834128</p>
         </div>
- 
-
-        
-      </section>
-      
-      
-      
-        
-
-      
+      </section>     
     </div>
       
     </div>
