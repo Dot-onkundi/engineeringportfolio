@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import {BsFillMoonStarsFill} from 'react-icons/bs'
 import {FaTwitterSquare, FaLinkedin, FaInstagramSquare, FaGithubSquare} from 'react-icons/fa'
 import ProfilePic from './images/profilepic.jpg'
@@ -6,6 +6,7 @@ import ImageOne from './images/design.svg'
 import ImageTwo from './images/power.png'
 import ImageThree from './images/robin.png'
 import {Link} from 'react-router-dom'
+import emailjs from '@emailjs/browser';
 
 
 
@@ -15,6 +16,20 @@ import {TiTick} from 'react-icons/ti'
 
 
 const Allcomponents = () => {
+   const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_el4m20p', 'template_ftkn2af', form.current, '-S2EjjhiNJ0MFGusO')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset();
+  };
+  
 
   return (
     <div>
@@ -118,11 +133,15 @@ const Allcomponents = () => {
                 <p> Let me get in touch </p>
             </div>
             <div className="my-4">
-                <div className='flex flex-col  sm:flex-row items-center justify-between w-full '>
-                <input className=' p-3 w-full rounded-md ' type='email' placeholder='Enter email'/>
-                <button className='bg-white text-gray-700 w-[200px] rounded-md font-medium ml-4 my-6 mx-auto px-6 py-3 hover:text-[#051b61]' > Submit </button>
+                
+                  <form ref={form} onSubmit={sendEmail} className='text-gray-700 flex flex-col  sm:flex-row items-center justify-between w-full'> 
+                  <input className=' p-3 w-full rounded-md ' type='email' placeholder='Enter email' name='message'/>
+                  <button type="submit" value="Send"  className='bg-white text-gray-700 w-[200px] rounded-md font-medium ml-4 my-6 mx-auto px-6 py-3 hover:text-[#051b61]' > Submit </button>
 
-                </div>      
+                  </form>
+
+
+                    
             </div>
 
         </div>
