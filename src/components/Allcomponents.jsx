@@ -34,7 +34,7 @@ const Allcomponents = () => {
   return (
     <div>
       <div className='text-[#000] bg-white px-10 '>
-      <section className=' h-screen '>
+      <section className=' h-screen max-w-[1240px] mx-auto '>
         <nav className='py-10 mb-12 flex justify-between'>
           <h1 className='text-lg'> Developed by Felix</h1>
           <ul className='flex items-center justify-between'>
@@ -42,7 +42,7 @@ const Allcomponents = () => {
               <BsFillMoonStarsFill  className='cursor-pointer text-2xl'/>
             </li>
             <li> 
-              <Link target='_blank' to='https://drive.google.com/file/d/1lSlpEhNYkSLMlSZJfTah1VnAvab1Kci_/view?usp=sharing'><button className='bg-gradient-to-r from-cyan-500 to-teal-600 text-white px-4 py-2 rounded-md ml-8 '> Resume </button>  </Link>
+              <Link target='_blank' to='//drive.google.com/file/d/1lSlpEhNYkSLMlSZJfTah1VnAvab1Kci_/view?usp=sharing'><button className='bg-gradient-to-r from-cyan-500 to-teal-600 text-white px-4 py-2 rounded-md ml-8 '> Resume </button>  </Link>
             </li>            
            </ul>
         </nav>
