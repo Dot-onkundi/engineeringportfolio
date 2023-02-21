@@ -42,7 +42,7 @@ const Allcomponents = () => {
               <BsFillMoonStarsFill  className='cursor-pointer text-2xl'/>
             </li>
             <li> 
-              <Link target='_blank' to='//drive.google.com/file/d/1lSlpEhNYkSLMlSZJfTah1VnAvab1Kci_/view?usp=sharing'><button className='bg-gradient-to-r from-cyan-500 to-teal-600 text-white px-4 py-2 rounded-md ml-8 '> Resume </button>  </Link>
+              <Link target='_blank' to='//drive.google.com/file/d/1q23o03u6ZdQYfTFegv5HoDb-xa9sObhU/view?usp=sharing'><button className='bg-gradient-to-r from-cyan-500 to-teal-600 text-white px-4 py-2 rounded-md ml-8 '> Resume </button>  </Link>
             </li>            
            </ul>
         </nav>
