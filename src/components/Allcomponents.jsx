@@ -7,6 +7,11 @@ import ImageTwo from './images/power.png'
 import ImageThree from './images/robin.png'
 import {Link} from 'react-router-dom'
 import emailjs from '@emailjs/browser';
+import { categories } from './data/Data.js'
+import { frameworks } from './data/Data.js'
+
+
+
 
 
 
@@ -42,7 +47,7 @@ const Allcomponents = () => {
               <BsFillMoonStarsFill  className='cursor-pointer text-2xl'/>
             </li>
             <li> 
-              <Link target='_blank' to='//drive.google.com/file/d/1q23o03u6ZdQYfTFegv5HoDb-xa9sObhU/view?usp=sharing'><button className='bg-gradient-to-r from-cyan-500 to-teal-600 text-white px-4 py-2 rounded-md ml-8 '> Resume </button>  </Link>
+              <Link target='_blank' to='//drive.google.com/file/d/1ochQVcDIzXHnTMZOREoSGXgOEifC-c83/view?usp=sharing'><button className='bg-gradient-to-r from-cyan-500 to-teal-600 text-white px-4 py-2 rounded-md ml-8 '> Resume </button>  </Link>
             </li>            
            </ul>
         </nav>
@@ -71,6 +76,7 @@ const Allcomponents = () => {
         <div className='max-w-[1240px] mx-auto' >
           <h3 className="text-3xl ">Experience </h3>
           <p className='text-md py-2 leading-8 text-gray-600'> In my journey as an engineer, I have worked both remotely and onsite for <span className='text-teal-500'> Companies </span> and <span className='text-teal-500'> Startups </span>  and colloborated with teams to deliver products and solutions for both business and consumers.</p>
+          <p className='text-md py-2 leading-8 text-gray-600'> In all of the following roles, I demonstrated a strong work ethic, an attention to detail, and a commitment to safety and quality. I also developed strong problem-solving skills, working collaboratively with teams to identify and implement solutions to technical challenges. </p>
           <p className='text-md py-2 leading-8 text-gray-600'> I have the following eperience </p>
         </div>
 
@@ -97,7 +103,7 @@ const Allcomponents = () => {
                 <h2 className='text-2xl font-bold text-center'>Kenya Power</h2>
                 <p className=' text-center text-md '>January 2021-April 2022 </p>
                 <div className="text-gray-600">
-                  <p className='py-2 flex  mt-8'> < TiTick className='fill-[#051b61]'/>Installed, dismantled, assembled, tested, and analysed results from various transformers. </p>
+                  <p className='py-2 flex  mt-8'> < TiTick className='fill-[#051b61]'/>Installed, dismantled, assembled, tested, and analysed results from various 11000/420V, 33000/420V transformers. </p>
                   <p className='py-2 flex'> <TiTick  className='fill-[#051b61]'/>Participated in troubleshooting of various protection system equipment </p>
                   <p className='py-2 flex'> <TiTick  className='fill-[#051b61]'/>Actively gave recommendations to improve workflow. </p>
                   <p className='py-2 flex'> <TiTick  className='fill-[#051b61]'/>Installed an 11kV metering circuit breaker, and an assortment of protection equipment. </p>
@@ -114,7 +120,7 @@ const Allcomponents = () => {
                   <p className='py-2 flex  mt-8'> < TiTick  className='fill-[#051b61]'/>Troubleshoot and repaired various machines along the textile production line. </p>
                   <p className='py-2 flex'> <TiTick  className='fill-[#051b61]'/>Performed autonomous maintenance of machines </p>
                   <p className='py-2 flex'> <TiTick  className='fill-[#051b61]'/>Reconciled daily KWH readings and ECL logs </p>
-                  <p className='py-2 flex'> <TiTick  className='fill-[#051b61]'/>Actively gave recommendations aimed at reducing machine power consumption. </p>
+                  <p className='py-2 flex'> <TiTick  className='fill-[#051b61]'/>Participated in a 6-member team that gave recommendations for machine and AC power consumption  </p>
                 </div>
 
 
@@ -123,6 +129,43 @@ const Allcomponents = () => {
         
 
         </div>
+        <div className='max-w-[1240px] mx-auto px-4 py-12'>
+        <h1 className='text-black  text-4xl '> Technical Skills</h1>
+        <h1 className='text-black text-3xl text-center '> Languages</h1>
+        {/* Ctegories */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 py-6 "> 
+        {categories.map((item, index)=>(
+            <div className="bg-gray-100 rounded-lg p-4 flex justify-between items-center" key={index}>
+                <h2 className='font-bold sm:text-xl '>{item.name}</h2>
+                <img  className='w-20 ' src={item.image} alt={item.name}/>
+
+            </div>
+
+
+        )) }
+
+
+
+        </div>
+        <h1 className='text-black text-3xl text-center '> Frameworks and Tools</h1>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 py-6 "> 
+        {frameworks.map((item, index)=>(
+            <div className="bg-gray-100 rounded-lg p-4 flex justify-between items-center" key={index}>
+                <h2 className='font-bold sm:text-xl '>{item.name}</h2>
+                <img  className='w-20 ' src={item.image} alt={item.name}/>
+
+            </div>
+
+
+        )) }
+
+
+
+        </div>
+        
+
+
+    </div>
 
 
     </div>
