@@ -5,6 +5,7 @@ import ProfilePic from './images/profilepic.jpg'
 import ImageOne from './images/design.svg'
 import ImageTwo from './images/power.png'
 import ImageThree from './images/robin.png'
+import ImageFour from './images/Huaweii.png'
 import {Link} from 'react-router-dom'
 import emailjs from '@emailjs/browser';
 import { categories } from './data/Data.js'
@@ -47,7 +48,7 @@ const Allcomponents = () => {
               <BsFillMoonStarsFill  className='cursor-pointer text-2xl'/>
             </li>
             <li> 
-              <Link target='_blank' to='//drive.google.com/file/d/1ochQVcDIzXHnTMZOREoSGXgOEifC-c83/view?usp=sharing'><button className='bg-gradient-to-r from-cyan-500 to-teal-600 text-white px-4 py-2 rounded-md ml-8 '> Resume </button>  </Link>
+              <Link target='_blank' to='//drive.google.com/file/d/1R8Mbr0eJZDrYxhPfw2f2TJBIJyAencHp/view?usp=sharing'><button className='bg-gradient-to-r from-cyan-500 to-teal-600 text-white px-4 py-2 rounded-md ml-8 '> Resume </button>  </Link>
             </li>            
            </ul>
         </nav>
@@ -55,7 +56,7 @@ const Allcomponents = () => {
         <div className='text-center p-10 '>
           <h2 className='text-5xl text-teal-500 font-medium '>Onkundi Felix</h2>
           <h3 className='tet-2xl py-2 uppercase'>Electrical Engineer</h3>
-          <p className='text-md py-5 leading-8 text-gray-800'> Onkundi is a competent Electrical Engineer with comprehensive knowledge in leadership, management, designing and development of software and maintaining electrical systems to the desired specifications, emphasising reliability,sustainability, quality, and safety. I have exemplary communication skills with an innate ability to analyze, coordinate and synthesize data. </p>
+          <p className='text-md py-5 leading-8 text-gray-800'> Onkundi is a results-driven Electrical and Electronics Engineer with a strong background in project management, data center operations, and electrical system design. Adept at optimizing energy efficiency, coordinating large-scale projects, and delivering high-quality results under tight deadlines. Skilled in troubleshooting, system testing, and process improvement with a focus on sustainability. </p>
         </div>
         <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 ">
         
@@ -83,7 +84,21 @@ const Allcomponents = () => {
         {/*Experience Cards */}
 
         <div className='w-full py-[4rem] px-4 bg-white'>
-        <div className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-10 ">
+        <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 gap-10 ">
+        <div className="w-full shadow-xl flex flex-col p-4 my-8 md:my-0 rounded-lg hover:scale-105 duration-500">
+                <img className='w-20 mx-auto mt-[-3rem] rounded' src={ImageFour} alt='none' />
+                <h2 className='text-2xl font-bold text-center'>Huawei</h2>
+                <p className=' text-center text-md '>July 2023-Date </p>
+                <div className="text-gray-600 ">
+                  <p className='py-2 flex  mt-8'> < TiTick className='fill-[#051b61]'/>Manage the design, delivery, and installation of over 50 specialized data center components. </p>
+                  <p className='py-2 flex'> <TiTick  className='fill-[#051b61]'/>Utilize BIM, MS Project, and Agile methodologies for coordinating design changes to meet client specifications and industry standards. </p>
+                  <p className='py-2 flex'> <TiTick  className='fill-[#051b61]'/>Organize industrial testing for data center equipment, facilitating coordination for functional tests, UPTIME tests and site acceptance tests. </p>
+                  <p className='py-2 flex'> <TiTick  className='fill-[#051b61]'/>Lead a cross-functional team in the installation of an autonomous electrical systems </p>
+                </div>
+
+
+
+            </div>
             <div className="w-full shadow-xl flex flex-col p-4 rounded-lg hover:scale-105 duration-500">
                 <img className='w-20 mx-auto mt-[-3rem] bg-white' src={ImageOne} alt='none' />
                 <h2 className='text-2xl font-bold text-center'>State House Nakuru</h2>
@@ -98,11 +113,12 @@ const Allcomponents = () => {
 
 
             </div>
+            
             <div className="w-full shadow-xl flex flex-col p-4 my-8 md:my-0 rounded-lg hover:scale-105 duration-500">
                 <img className='w-20 mx-auto mt-[-3rem] rounded' src={ImageTwo} alt='none' />
                 <h2 className='text-2xl font-bold text-center'>Kenya Power</h2>
                 <p className=' text-center text-md '>January 2021-April 2022 </p>
-                <div className="text-gray-600">
+                <div className="text-gray-600 ">
                   <p className='py-2 flex  mt-8'> < TiTick className='fill-[#051b61]'/>Installed, dismantled, assembled, tested, and analysed results from various 11000/420V, 33000/420V transformers. </p>
                   <p className='py-2 flex'> <TiTick  className='fill-[#051b61]'/>Participated in troubleshooting of various protection system equipment </p>
                   <p className='py-2 flex'> <TiTick  className='fill-[#051b61]'/>Actively gave recommendations to improve workflow. </p>
@@ -130,7 +146,6 @@ const Allcomponents = () => {
 
         </div>
         <div className='max-w-[1240px] mx-auto px-4 py-12'>
-        <h1 className='text-black  text-4xl '> Technical Skills</h1>
         <h1 className='text-black text-3xl text-center '> Languages</h1>
         {/* Ctegories */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 py-6 "> 
@@ -197,7 +212,7 @@ const Allcomponents = () => {
       <div className='mx-auto text-md py-5 text-center ' >
           <h3 className="text-3xl ">Contact me </h3>
           <p className='text-md py-2 leading-8 text-gray-600'> Hi there? My inbox is open to all. Request for a free open source collaboration and let us discuss a project. </p>
-          <p className='text-md py-2 leading-8 text-gray-600'> My services range from electrical and software engineering to leadership for teams. Let us connect! </p>
+          <p className='text-md py-2 leading-8 text-gray-600'> My services range from electrica, software engineering and project management to leadership for teams. Let us connect! </p>
           <p className='text-md pt-2 leading-8 text-gray-600'> onkundifelix@outlook.com</p>
           <p className='text-md leading-8 text-teal-700'> +254710834128</p>
         </div>
